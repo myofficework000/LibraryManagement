@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".view.fragment.BookDetailsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_cover"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/img_cover"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Title" />
+
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Author" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Published Year: " />
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Genre: " />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"
+        android:progressTint="#EDD923"
+        android:scaleX="0.5"
+        android:scaleY="0.5"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Description: " />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_portrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_portrait"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/im_portrait"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"
+        android:progressTint="#EDD923"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintStart_toEndOf="@id/im_portrait"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

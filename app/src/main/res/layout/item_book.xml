@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_cover"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_cover"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/im_cover"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/im_cover"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/im_cover"
+        app:layout_constraintTop_toBottomOf="@id/tv_author"/>
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"
+        android:progressTint="#EDD923"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_year"
+        app:layout_constraintStart_toEndOf="@id/im_cover"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

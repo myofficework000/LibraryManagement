@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".view.fragment.AuthorDetailsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_portrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/img_portrait"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Birth Year: " />
+
+    <TextView
+        android:id="@+id/tv_genres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Genres: " />
+
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"
+        android:progressTint="#EDD923"
+        android:scaleX="0.5"
+        android:scaleY="0.5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Book Published by Author: " />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_book"/>
+
+</LinearLayout>

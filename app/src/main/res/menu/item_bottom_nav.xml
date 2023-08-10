@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/it_bottom_home"
+        android:icon="@drawable/va_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/it_bottom_authors"
+        android:icon="@drawable/va_authors"
+        android:title="Authors"/>
+    <item
+        android:id="@+id/it_bottom_library"
+        android:icon="@drawable/va_library"
+        android:title="Library"/>
+    <item
+        android:id="@+id/it_bottom_profile"
+        android:icon="@drawable/va_profile"
+        android:title="Profile"/>
+</menu>

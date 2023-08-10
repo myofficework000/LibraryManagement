@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4791C1"
+    tools:context=".view.fragment.HomeFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_stats"
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="nn Books &amp; n Authors in Collection "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_add_books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:text="Add Books"/>
+
+        <Button
+            android:id="@+id/btn_add_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:background="@android:color/transparent"
+            android:text="Add Authors"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_card"
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:queryHint="Search for a book" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="New Collections"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_books"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            tools:listitem="@layout/item_book" />
+
+
+    </LinearLayout>
+</LinearLayout>

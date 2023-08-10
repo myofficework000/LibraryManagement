@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".view.fragment.AddBookFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Title"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_author"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Author"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_genre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Genre"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_rating"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Rating"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_year"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Year"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Description"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+</LinearLayout>
